@@ -18,6 +18,8 @@ app.use(express.json());
 //Routes config
 app.use("/clauschochodev/api/auth", require("./routes/auth"));
 app.use("/clauschochodev/api/type_activity", require("./routes/type_activity"));
+app.use("/clauschochodev/api/project", require("./routes/project"));
+app.use("/clauschochodev/api/activity", require("./routes/activity"));
 
 //Listen requests
 app.listen(process.env.PORT, () => {
