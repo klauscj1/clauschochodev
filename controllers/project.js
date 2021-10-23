@@ -12,7 +12,7 @@ const getProjectById = async (req, res = response) => {
   if (!project) {
     return res.status(404).json({
       ok: false,
-      msg: "NOT FOUND Project",
+      msg: "NOT FOUND Project by this id",
     });
   }
   res.status(200).json({
